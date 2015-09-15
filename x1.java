@@ -26,8 +26,16 @@ void draw() {
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
-  /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon, 120,horizon-50, 180,horizon-50  );  // tree
+  //* INSERT YOUR CODE HERE! 
+  fill( 103,44,9 );
+  rect(38, 60, 25, 60);              // tree fixed
+  fill( 100,200,100 );
+  triangle(30, 75, 58, 20, 86, 75);
+  triangle(20, 65, 48, 10, 76, 65); 
+  triangle(40, 85, 68, 30, 96, 85);
+  triangle(5, 85, 38, 30, 66, 85);
+  
+  
   text( "This is NOT a good tree; please fix it!", 150,horizon );
                                             // house
 
