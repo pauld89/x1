@@ -20,13 +20,22 @@ void setup() {
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
   background( 100,150,200 );                // sky
-  fill( 255,255,0 );
-  ellipse( width*3/4, height/8, 40,40 );    // sun
+  fill( 255,187,13 );
+  ellipse( width*3/4, height/10, 100,100 );    // sun
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
-  //* INSERT YOUR CODE HERE! 
+  // HOUSE
+  fill(255,0,47);
+  rect(150, 65, 55, 55);
+  fill(0,255,236);
+  triangle(150, 65, 178, 10, 206, 65);
+  fill(0);
+  rect(187, 90, 15, 30);
+  
+  
+   
   fill( 103,44,9 );
   rect(38, 60, 25, 60);              // tree fixed
   fill( 100,200,100 );
@@ -36,11 +45,11 @@ void draw() {
   triangle(5, 85, 38, 30, 66, 85);
   
   
-  text( "This is NOT a good tree; please fix it!", 150,horizon );
+  //text( "This is NOT a good tree; please fix it!", 150,horizon );
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Dairo", 60,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
