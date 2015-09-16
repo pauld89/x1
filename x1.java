@@ -19,8 +19,8 @@ void setup() {
 //// NEXT FRAME:  scene, action, show.
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
-  background( 100,150,200 );                // sky
-  fill( 255,187,13 );
+  background( 0,78,242 );                // sky
+  fill( 247,124,0 );
   ellipse( width*3/4, height/10, 100,100 );    // sun
   // Grass
   fill( 100,200,100 );
@@ -49,7 +49,7 @@ void draw() {
                                             // house
 
   fill(0);
-  text( "My name is Dairo", 60,height-20 );                                          
+  text( "My name is Dairo Paulino", 60,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -58,8 +58,13 @@ void draw() {
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
-  fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  fill(68,141,131); rect( x-25 ,y+25, 40,50 );
+ ellipse( x - 50, y - 50, 20, 20);
+ ellipse( x + 50, y - 50, 20, 20); /* REPLACE THIS WITH YOUR OWN CODE! */
+  fill(0);
+  text( "TARZAN !", x,y );
+  fill(68,141,131);
+  rect(x+70,y+100,-150,10);
 
 }
 
